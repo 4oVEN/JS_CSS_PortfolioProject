@@ -207,10 +207,10 @@ section {
 
 /*About*/
 .about-container {
-  display: grid;
+  /* display: grid; */
   grid-template-columns: repeat(2, 1fr);
   padding-top: 3.5rem;
-  padding-bottom: 5rem;
+  /* padding-bottom: 5rem; */
 }
 .about-container .right-about {
   display: grid;
@@ -312,7 +312,7 @@ section {
   width: 80%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .css {
-  width: 95%;
+  width: 85%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .js {
   width: 75%;
@@ -437,6 +437,7 @@ section {
   font-size: 1.5rem;
   color: var(--color-white);
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 .portfolios .portfolio-item .hover-items .icons {
   display: flex;
@@ -617,7 +618,9 @@ section {
   display: flex;
   justify-content: flex-start;
 }
-
+input._error{
+  background-color: red !important;
+}
 /*Independed components*/
 .btn-con {
   display: flex;
@@ -665,7 +668,17 @@ section {
   transform: translateX(0);
   transition: all 0.4s ease-out;
 }
-
+button {
+  cursor: pointer;
+}
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
 .main-title {
   text-align: center;
 }
